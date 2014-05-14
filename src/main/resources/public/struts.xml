@@ -5,13 +5,17 @@
 
 <struts>
 
-	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
-	<constant name="struts.devMode" value="true" />
+	<!--<constant name="struts.enable.DynamicMethodInvocation" value="true" />-->
+	<!--<constant name="struts.devMode" value="true" />-->
 
 	<!-- Add packages here -->
-	<package name="/" extends="struts-default">
+	<package name="/" namespace="/" extends="struts-default">
         <action name="index" class="com.vernon.struts2.web.action.IndexAction">
             <result name="success">/index.jsp</result>
+        </action>
+
+        <action name="ognl/*" class="com.vernon.struts2.web.action.OGNLAction" method="{1}">
+            <result name="success">/templates/ognl/ognl.jsp</result>
         </action>
 	</package>
 
