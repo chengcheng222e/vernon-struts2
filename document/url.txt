@@ -2,4 +2,6 @@ http://localhost:8080/
 
 http://localhost:8080/ognl.do
 
-# 测试 SourceTree For Mac
+http://localhost:8080/transfer.do
+
+http://localhost:8080/transfer/param.do

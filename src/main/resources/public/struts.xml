@@ -17,6 +17,10 @@
         <action name="ognl/*" class="com.vernon.struts2.web.action.OGNLAction" method="{1}">
             <result name="success">/templates/ognl/ognl.jsp</result>
         </action>
+
+        <action name="transfer/*" class="com.vernon.struts2.web.action.TransferListAction" method="{1}">
+            <result name="success">/templates/ognl/transfer_arraylist.jsp</result>
+        </action>
 	</package>
 
 </struts>
